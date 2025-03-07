@@ -1,0 +1,98 @@
+/* Resetando margens e paddings para garantir consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container principal da página de login */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+    padding: 20px;
+  }
+  
+  /* Caixa do formulário */
+  .login-form {
+    background-color: #babfd2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Estilos para o título de login */
+  .login-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0f014d;
+  }
+  
+  /* Estilo do botão de login */
+  .login-form .button--assine {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form .button--assine:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Links para recuperação de senha e criar conta */
+  .login-form .links {
+    margin-top: 20px;
+  }
+  
+  .login-form .links p {
+    font-size: 14px;
+    color: #0f014d;
+  }
+  
+  .login-form .links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .login-form .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos de erro */
+  .login-form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .login-form {
+      width: 90%;
+      padding: 30px;
+    }
+  }
+  
+

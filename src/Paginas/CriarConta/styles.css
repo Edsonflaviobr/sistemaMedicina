@@ -1,0 +1,137 @@
+/* Resetando margens e paddings para garantir consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Garantir que o conteúdo fique no topo */
+    height: 100vh;
+    padding-top: 20px; /* Ajuste para compensar a altura do cabeçalho fixo */
+    width: 100%;
+  }
+  
+  /* Container da página de criação de conta */
+  .criar-conta-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 50%;
+    max-height: 100%;
+    min-width: 50%;
+    max-width: 80%; 
+    margin: auto;
+    margin-top: 50px;
+    padding: 0px 20px 30px 10px; 
+    background-color: #1b6085;
+    border-radius: 10px;
+  }
+  
+  /* Seção de texto */
+  .criar-conta-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 10px 100px 40px;
+  }
+  
+  .criar-conta-texto h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Seção do formulário */
+  .criar-conta-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-top: 30px;
+    padding: 10px 60px 10px;
+    background-color: #babfd2;
+    border-radius: 8px;
+  }
+  
+  .criar-conta-form span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .criar-conta-form .input-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .criar-conta-form button {
+    padding: 1rem 2rem;
+    background-color: #ff0026;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .criar-conta-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ajustes nas colunas e layout interno */
+  .criar-conta-wrapper {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .criar-conta-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .criar-conta-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Formulário de entrada */
+  .criar-conta-input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Melhorando responsividade */
+  @media screen and (max-width: 768px) {
+    .criar-conta-container {
+      flex-direction: column;
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .criar-conta-form {
+      padding: 20px;
+    }
+  }
+  

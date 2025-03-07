@@ -1,0 +1,40 @@
+.input-container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.icon-container {
+    margin-right: 10px;
+}
+  
+.input-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: transparent;
+    color: #022ec0;
+    border: 0;
+    height: 30px;
+}
+
+.input-radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-radio-group input[type="radio"] {
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  
+  .input-radio-group label {
+    margin-right: 20px;
+    font-weight: normal;
+  }

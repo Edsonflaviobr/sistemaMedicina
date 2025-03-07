@@ -1,0 +1,111 @@
+/* Resetando margens e paddings para garantir consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Garantir que o conteúdo fique no topo */
+    height: 100vh;
+    padding-top: 20px; /* Ajuste para compensar a altura do cabeçalho fixo */
+    width: 100%;
+  }
+  
+  /* Container principal da página de administração */
+  .adm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #babfd2;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    margin: 50px;
+  }
+  
+  /* Estilo do título da página */
+  .adm-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilo do formulário de consulta */
+  .adm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .adm-form label {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .adm-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .adm-form button {
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Estilo da tabela */
+  .adm-table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+  }
+  
+  .adm-table th,
+  .adm-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .adm-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .adm-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .adm-table td button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .adm-table td button:last-child {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .adm-table td button:last-child:hover {
+    background-color: #c82333;
+  }
+  

@@ -1,0 +1,96 @@
+/* Resetando margens e paddings para garantir consistência entre os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 20px; /* Ajuste para compensar a altura do cabeçalho fixo */
+  width: 100%;
+}
+
+/* Cabeçalhos */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Container do formulário */
+.form-container {
+  background-color: #e2d8f6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px; /* Aumentando a largura máxima */
+  margin: 60px;
+  margin-bottom: 80px;
+}
+
+/* Estilo das labels */
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Estilo dos campos de entrada (input, textarea) */
+.form-input, .react-datepicker-wrapper {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Layout com duas colunas */
+.form-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+.date-time-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.date-time-container .form-label {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Botão */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #c10404f8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%; /* O botão ocupa toda a largura */
+  margin-top: 1rem; /* Espaçamento superior */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
